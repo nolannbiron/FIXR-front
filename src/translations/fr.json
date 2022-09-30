@@ -1,0 +1,10 @@
+{
+    "general": {
+        "loading": "Chargement en cours"
+    },
+    "error": {
+        "title": "Erreur",
+        "unexpected": "Quelque chose d'inattendu est survenu",
+        "refreshOrContact": "Veuillez rafraîchir la page ou contacter un administrateur si le problème persiste"
+    }
+}

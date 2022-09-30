@@ -1,0 +1,85 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#root,
+body,
+html {
+    font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
+
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    @apply text-base transition-all duration-200;
+}
+
+a {
+    font-weight: 500;
+    color: #646cff;
+    text-decoration: inherit;
+}
+a:hover {
+    color: #535bf2;
+}
+
+:root {
+    --rsbs-backdrop-bg: rgba(0, 0, 0, 0.5);
+    --rsbs-bg: hsl(var(--b1));
+    --rsbs-handle-bg: hsl(var(--pc));
+    --rsbs-max-w: auto;
+    --rsbs-ml: env(safe-area-inset-left);
+    --rsbs-mr: env(safe-area-inset-right);
+    --rsbs-overlay-rounded: 16px;
+}
+[data-rsbs-backdrop] {
+    z-index: 9999;
+}
+
+.ReactModal__Overlay {
+    opacity: 0;
+    transition: all 400ms ease-in-out;
+}
+
+.ReactModal__Content {
+    opacity: 0;
+    transition: all 400ms ease-in-out;
+    transform: scale(0.7);
+    &:focus-visible,
+    &:focus {
+        outline: none;
+    }
+}
+
+.ReactModal__Overlay--after-open {
+    opacity: 1;
+}
+
+.ReactModal__Overlay--before-close {
+    opacity: 0;
+}
+
+.ReactModal__Content--after-open {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.ReactModal__Content--before-close {
+    opacity: 0;
+    transform: scale(0.7);
+}
+
+.rc-drawer-content-wrapper {
+    transition: transform 0.6s;
+}
