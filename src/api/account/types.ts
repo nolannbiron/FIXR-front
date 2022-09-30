@@ -24,7 +24,7 @@ export interface IAccount {
 }
 
 export interface AccountServer {
-    _id: string
+    id: string
     firstName: string
     lastName: string
     username: string

@@ -1,7 +1,7 @@
 import { IAccount, AccountServer, permissionLevelsList } from './types'
 
 export const adaptUser = (user: AccountServer): IAccount => ({
-    id: user._id,
+    id: user.id,
     firstName: user.firstName,
     lastName: user.lastName,
     username: user.username,

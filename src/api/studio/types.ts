@@ -12,7 +12,7 @@ export interface IStudio {
 }
 
 export interface ServerStudio {
-    _id: string
+    id: string
     name: string
     owner: string | IUser
     users: string[] | IUser[]

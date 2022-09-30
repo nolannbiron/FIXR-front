@@ -2,7 +2,7 @@ import { IStudio, ServerStudio } from './types'
 
 export const adaptServerStudio = (serverStudio: ServerStudio): IStudio => {
     return {
-        id: serverStudio._id,
+        id: serverStudio.id,
         name: serverStudio.name,
         owner: serverStudio.owner,
         users: serverStudio.users,

@@ -19,6 +19,8 @@ export default function ChangeStudio(): JSX.Element {
         refetch()
     }, [activeStudioId, refetch, data?.studios])
 
+    console.log(data)
+
     if (!data || isError) return <></>
 
     const handleChange = (value: IStudio) => {
